@@ -1,0 +1,648 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: sans-serif;
+   text-decoration: none;
+   list-style-type: none;
+   color: #fff;
+}
+
+nav {
+   width: 100%;
+   height: 100px;
+   position:fixed;
+   top: 0px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background: transparent;
+backdrop-filter: blur(15px);
+z-index: 10;
+}
+
+nav .menu {
+   width: auto;
+   padding: 15px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+nav .menu ul {
+   width: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+
+nav .menu ul li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 16px;
+
+   list-style-type: none;
+}
+
+nav .menu ul li a {
+   text-decoration: none;
+   font-size: 1.1em;
+   color: #ffff;
+}
+
+nav .iconContacts {
+   width: auto;
+   padding: 15px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+nav .iconContacts ul {
+   width: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+
+nav .iconContacts ul li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 16px;
+
+   list-style-type: none;
+}
+
+nav .iconContacts ul li a {
+   text-decoration: none;
+   font-size: 2.1em;
+   color: #000;
+}
+
+#introduc {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #010101;
+}
+
+#introduc .titleme {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+   width: 40%;
+   height: 90%;
+}
+
+#introduc .titleme .allDescription {
+   display: flex;
+   flex-direction: column;
+   margin-left: 20px;
+   width: auto;
+   height: auto;
+   padding: 10px auto;
+   gap: 50px;
+}
+
+#introduc .titleme .allDescription .name h1 {
+   font-size: 26px;
+   width: 280px;
+   height: 100px;
+   padding: 10px;
+}
+
+#introduc .titleDescription {
+   max-width: 100%;
+   height: auto;
+}
+
+#introduc .titleme .allDescription p {
+   font-size: 1.2em;
+
+}
+
+#introduc .titleme .allDescription button {
+   width: 100px;
+   height: 30px;
+   border-radius: 10px;
+   background: #e27603;
+}
+
+#introduc .myimages {
+   width: 40%;
+   height: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#introduc .myimages img{
+   position: absolute;
+}
+
+#Projects {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: #010101;
+}
+
+#Projects .projectsList {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 90%;
+   height: 40vh;
+}
+
+#Projects .projectsList .cardProjectd {
+   width: 90%;
+   height: 80%;
+   margin: 20px;
+   gap: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#Projects .projectsList .cardProjectd .iconGit {
+   width: 25%;
+   height: 20%;
+   margin-left: -240px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+#Projects .projectsList .cardProjectd .iconGit li a {
+   text-decoration: none;
+   font-size: 2.1em;
+   color: #f07007;
+   background: #000;
+   border-radius: 50%;
+   padding: 5px;
+   object-fit: cover;
+}
+
+#Projects .projectsList .cardProjectd .nameProjects {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 80%;
+   height: 50%;
+   border-radius: 20px;
+   box-shadow: 10px 5px 15px rgb(255, 255, 255);
+   background: #edebeb;
+  
+}
+#Projects .projectsList .cardProjectd .nameProjects h1 a{
+   color: #000;
+}
+
+
+#Projects .projectsList .cardProjectd .technologies {
+   width: 80%;
+   height: 30%;
+
+   display: flex;
+   justify-content: space-evenly;
+   align-items: start;
+   flex-direction: column;
+}
+
+#Projects .projectsList .cardProjectd .technologies h3 {
+   font-size: 23px;
+}
+
+#Projects .projectsList .cardProjectd .technologies p {
+   font-size: 20px;
+}
+
+
+#Technologies{
+   width: 100%;
+   height: auto;
+   display: flex;
+   gap: 10px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: #010101;
+}
+
+#Technologies .listIconTechnologies {
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   width: 80%;
+   height: 25vh;
+   gap: 30px;
+   
+}
+lottie-player{
+  width: 150px;
+  height: 150px;
+  font-size: 50px;
+   background: rgb(191, 183, 183);
+   box-shadow: -10px 5px 5px #c7c1c1;
+}
+
+#Technologies .listIconTechnologies .cardtechnologies {
+   width: auto;
+   height: 80%;
+   margin: 5px;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+#Contact{
+   width: 100vw;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  background: #010101;
+   gap: 50px;
+}
+#Contact h5{
+ font-size: 25px;
+}
+
+#Contact .sendmesagge{
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#Contact .sendmesagge .formInput{
+   width: 100%;
+   height: 80%;
+   background: rgb(46, 46, 49);
+   display: flex;
+   gap: 30px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#Contact .sendmesagge .formInput ::placeholder{
+   font-size: 24px;
+}
+#Contact .sendmesagge .formInput input{
+   width: 80%;
+   height: 40px;
+   background: #5f5d5d;
+   font-size: 1em;
+}
+ .masagge {
+   width: 80%;
+   height: 200px;
+}
+#Contact .sendmesagge .formInput .masagge input{
+   width: 100%;
+   height: 200px;
+}
+#Contact .sendmesagge .formInput button{
+   width: 150px;
+height: 40px;
+background: #000000;
+color: #ffff;
+font-size: 1.1em;
+border-radius: 10px;
+}
+
+.media{
+   width: 50vw;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+}
+.media .containMedia{
+   width: auto;
+   gap: 20px;
+   height: auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   justify-content: center;
+   align-items: center;
+   
+}
+.media .containMedia a{
+   font-size: 40px;
+   color: #ffff;
+}
+footer{
+   width: 100%;
+   height: 90px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #010101;
+   border-top: 1px #ffff solid ;
+}
+footer p{
+   font-size: 20px;
+   color: #ffff;
+}
+
+
+@media only screen and (max-width: 600px) {
+   * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      text-decoration: none;
+      list-style-type: none;
+      color: #fff;
+   }
+   body{
+      background: #010101;
+      margin: 0px;
+      padding: 0px;
+   }
+   nav {
+      width: 100%;
+      height: auto;
+      position:relative;
+      top: 0px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column-reverse;
+      align-items: center;
+   backdrop-filter: blur(15px);
+   z-index: 10;
+   }
+   
+   nav .menu {
+      width: 100%;
+      padding: 15px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   nav .iconContacts {
+      width: 100%;
+      height: 60px;
+      padding: 15px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   
+   nav .iconContacts ul {
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      gap: 2px;
+      margin-left:150px;
+   }
+   .logo{
+      position:absolute;
+      left: 10px;
+      top: 10px;
+      margin: auto;
+      font-size: 1.6em;
+   }
+
+   #introduc {
+      width: 100%;
+      height: 110vh;
+      display: flex;
+      gap: 50px;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: self-start;
+      margin-bottom: 20px;
+   }
+   
+   #introduc .titleme {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      width: 40%;
+      height: 90%;
+   }
+   
+   #introduc .titleme .allDescription {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      width: auto;
+      height: auto;
+      padding: 10px auto;
+      gap: 50px;
+   }
+   
+   #introduc .titleme .allDescription .name h1 {
+      font-size: 26px;
+      width:350px;
+      height: 100px;
+      padding: 10px;
+      background: #000;
+   }
+   
+   #introduc .titleDescription {
+      max-width: 100%;
+      height: auto;
+   }
+   
+   #introduc .titleme .allDescription p {
+      font-size: 1.2em;
+      max-width: 100%;
+      height: auto;
+   
+   }
+   #introduc .myimages {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+   }
+   #introduc .myimages img{
+    z-index: 2;
+   }
+   
+   .myimages svg{
+      position: absolute;
+      z-index: 1;
+   }
+   #introduc .titleme .allDescription button {
+      width: 120px;
+      height: 35px;
+      border-radius: 10px;
+      background: #e27603;
+      margin-bottom: 10px;
+   }
+   #Projects {
+      width: 100%;
+      height: 250vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+   }
+   
+   #Projects .projectsList {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 99%;
+      height: 100%;
+   }
+   
+   #Projects .projectsList .cardProjectd {
+      width: 90%;
+      height: 80%;
+      margin: 20px;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   #Technologies{
+      width: 100%;
+      height: auto;
+      display:flex;
+      gap: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+
+   }
+   #Technologies .listIconTechnologies {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      width: 100%;
+      height:15vh;
+      gap: 20px;
+      
+   }
+   lottie-player{
+     width: 90px;
+     height: 90px;
+     font-size: 50px;
+      background: rgb(191, 183, 183);
+      box-shadow: -10px 5px 5px #c7c1c1;
+   }
+   
+   #Technologies .listIconTechnologies .cardtechnologies {
+      width: auto;
+      height: 80%;
+      margin: 5px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+   }
+   #Contact{
+      width: 100vw;
+      min-height: 100vh;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+   }
+
+   #Contact h5{
+      font-size: 20px;
+     }
+     
+     #Contact .sendmesagge{
+       width: 100vw;
+       height: 60vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+     }
+     
+     #Contact .sendmesagge .formInput{
+        width: 99%;
+        height: 80%;
+        background: rgb(46, 46, 49);
+        display: flex;
+        gap: 25px;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     #Contact .sendmesagge .formInput ::placeholder{
+        font-size: 20px;
+        color: #fff;
+     }
+     #Contact .sendmesagge .formInput input{
+        width: 99%;
+        height: 40px;
+        background: #5f5d5d;
+        font-size: 1em;
+        border-radius: 10px;
+     }
+      .masagge {
+        width: 99%;
+        height: 200px;
+        border-radius: 10px;
+     }
+     
+     .media{
+      width: 100vw;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+   }
+   .media .containMedia{
+      width: auto;
+      gap: 20px;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      
+   }
+   footer{
+      width: 100vw;
+      height: 90px;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      border-top: 1px #ffff solid ;
+   }
+   footer p{
+      max-width: 100%;
+      font-size: 20px;
+      color: #ffff;
+      margin: auto;
+   }
+ }
