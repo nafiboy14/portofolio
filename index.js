@@ -21,4 +21,21 @@ AOS.init({
    anchorPlacement: 'top-bottom',
 
 });
-// Aos Animation//
+//and Aos Animation//
+
+const submit = document.getElementById('submit')
+const popupAlert = document.getElementById('popupAlert')
+const feedbackToUser = document.getElementById('feedbackToUser')
+const nameInput = document.getElementById('nameInput')
+const removePop = document.getElementById('removePop')
+submit.addEventListener('click',function(e){
+  
+
+   popupAlert.classList.add('popupAlertactive')
+
+   feedbackToUser.innerHTML=(`halo ${nameInput.value} pesan anda telah kami terima`)
+})
+
+removePop.addEventListener('click',function(e){
+   popupAlert.classList.remove('popupAlertactive')
+})
