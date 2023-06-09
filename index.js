@@ -23,19 +23,62 @@ AOS.init({
 });
 //and Aos Animation//
 
-const submit = document.getElementById('submit')
-const popupAlert = document.getElementById('popupAlert')
-const feedbackToUser = document.getElementById('feedbackToUser')
-const nameInput = document.getElementById('nameInput')
-const removePop = document.getElementById('removePop')
+let submit = document.getElementById('submit')
+let popupAlert = document.getElementById('popupAlert')
+let feedbackToUser = document.getElementById('feedbackToUser')
+let removePop = document.getElementById('removePop')
+
+ let nameInput = document.getElementById('nameInput')
+ let emailInput = document.getElementById('emailInput')
+ let masaggeInput = document.getElementById('masaggeInput')
+
+
 submit.addEventListener('click',function(e){
-  
 
-   popupAlert.classList.add('popupAlertactive')
+   // form validation
 
-   feedbackToUser.innerHTML=(`halo ${nameInput.value} pesan anda telah kami terima`)
+
+   if(nameInput.value== ""){
+      popupAlert.classList.add('popupAlertactive')
+       feedbackToUser.innerHTML=(` nama tidak boleh kosong`)
+       removePop.addEventListener('click', function() {
+         popupAlert.classList.remove('popupAlertactive')
+         
+         this.focus();
+         return false ;
+       })
+
+   }
+   if(emailInput.value== ""){
+      popupAlert.classList.add('popupAlertactive')
+      feedbackToUser.innerHTML=(` email tidak boleh kosong`)
+      removePop.addEventListener('click', function() {
+        popupAlert.classList.remove('popupAlertactive')
+        
+        this.focus();
+         return false ;
+      })
+
+   }
+   if(masaggeInput.value == ""){
+      popupAlert.classList.add('popupAlertactive')
+      feedbackToUser.innerHTML=(` masagge tidak boleh kosong`)
+      removePop.addEventListener('click', function() {
+        popupAlert.classList.remove('popupAlertactive')
+        
+        this.focus();
+         return false ;
+      })
+   }
+
+   else
+   {
+      popupAlert.classList.add('popupAlertactive')
+      feedbackToUser.innerHTML=(` halo ${nameInput.value} pesan anda telah kami terima dengan baik`)
+      removePop.addEventListener('click', function() {
+        popupAlert.classList.remove('popupAlertactive')
+        
+      })
+   }  
 })
 
-removePop.addEventListener('click',function(e){
-   popupAlert.classList.remove('popupAlertactive')
-})
