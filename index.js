@@ -45,18 +45,21 @@ if (nameValue=='') {
 
    error.classList.add('errorActive')
    error.innerHTML='nama tidak boleh kosong'
+   error.style.color='reed';
    focus;
    return false;
 } if(emailValue=== ''){
   
    error.classList.add('errorActive')
    error.innerHTML='email tidak boleh kosong'
+   error.style.color='reed';
    focus;
    return false;
 }if(masaggeValue=== ''){
 
    error.classList.add('errorActive')
    error.innerHTML='masagge tidak boleh kosong'
+   error.style.color='reed';
    focus;
    return false;
 }
@@ -68,6 +71,7 @@ else {
    error.style.border='none';
    setInterval(() => {
       error.classList.remove('errorActive')
+      error.style.color='reed';
    }, 10000);
 }
 
